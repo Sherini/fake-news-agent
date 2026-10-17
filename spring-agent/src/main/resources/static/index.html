@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fake News Detection Agent</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="container">
+    <header>
+        <span class="tag">MODEL-POWERED AGENT</span>
+        <h1>Fake News Detection</h1>
+        <p>Analyze an article using AI-powered text classification.</p>
+    </header>
+
+    <form id="predict-form">
+        <label for="news">News article text</label>
+        <textarea id="news" rows="8"
+                  placeholder="Paste the headline or article here..."></textarea>
+
+        <div class="or">OR</div>
+
+        <label for="url">Article URL</label>
+        <input id="url" type="url"
+               placeholder="https://example.com/news-article">
+
+        <button id="submit" type="submit">Analyze article</button>
+    </form>
+
+    <section id="result" class="result" hidden aria-live="polite"></section>
+
+    <p class="disclaimer">
+        A model prediction is not independent fact-checking.
+        Verify important claims with reliable sources.
+    </p>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

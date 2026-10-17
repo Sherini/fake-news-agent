@@ -1,0 +1,11 @@
+Flask
+numpy
+pandas
+scikit-learn
+nltk
+newspaper3k
+lxml_html_clean
+shap
+lime
+transformers
+torch
